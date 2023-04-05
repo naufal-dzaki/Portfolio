@@ -1,0 +1,45 @@
+{
+    "about": [
+        {
+            "tech": ["HTML5 & CSS3", "Tailwind CSS", "Bootstrap", "JavaScript", "React JS", "PHP", "Laravel", "Figma"]
+        }
+    ],
+    "experience": [
+        {
+            "company": "peduly",
+            "linkCompany": "https://peduly.com",
+            "position": "Frontend Web Developer (internship)",
+            "startDate": "11-01-2022",
+            "endDate": "02-10-2022",
+            "tech": ["React JS", "Tailwind CSS", "Bootstrap", "SCSS"],
+            "jobDesc": ["Responsible for maintaining and implement design to code of Peduly using Tailwind CSS and React JS", "Responsible for initialize and implement design to code of Involuntir using Tailwind CSS and React JS", "Responsible for maintaining and implement design to code of Dashboard Peduly using React JS, Bootstrap and SCSS", "Collaborate with UI/UX Designer and Backend Engineer"]
+        },
+        {
+            "company": "aksamedia",
+            "linkCompany": "https://aksamedia.co.id/",
+            "position": "Student Internship",
+            "startDate": "10-01-2020",
+            "endDate": "03-01-2021",
+            "tech": ["wordpress"],
+            "jobDesc": ["Learn about landing page design and implement it using WordPress"]
+        }
+    ],
+    "project": [
+        {
+            "title": "BeSmart",
+            "imgUrl": "./img/project/besmart.png",
+            "tech": ["Laravel", "Tailwind CSS"],
+            "description": "Besmart is an E-Learning platform to facilitate the distance learning process.",
+            "linkGithub": "https://github.com/naufal-dzaki/besmart_",
+            "linkWebsite": "https://naufaldzaki.netlify.app"
+        },
+        {
+            "title": "BeSmart",
+            "imgUrl": "./img/project/besmart.png",
+            "tech": ["Laravel", "Tailwind CSS"],
+            "description": "Besmart is an E-Learning platform to facilitate the distance learning process.",
+            "linkGithub": "https://github.com/naufal-dzaki/besmart_",
+            "linkWebsite": "https://naufaldzaki.netlify.app"
+        }
+    ]
+}
