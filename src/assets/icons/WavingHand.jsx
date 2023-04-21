@@ -1,12 +1,13 @@
 import React from "react";
+import "./index.css";
 
-const WavingHand = ({ size }) => {
+const WavingHand = ({ size, isWaving }) => {
   return (
     // credit : https://icon-icons.com/icon/waving-hand/100830
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 48 48"
-      className={size ? size : "h-6"}>
+      className={`${isWaving && "wave"}  ${size ? size : "h-6"}`}>
       <path
         fill="#BCB7DB"
         d="M33.46 19.26l-.13 3.26-11.22-11.23a2.59 2.59 0 00-3.44-.29 2.49 2.49 0 00-.19 3.7l-1.59-1.59a2.77 2.77 0 00-3.77-.21 2.67 2.67 0 00-.1 3.87l-.02-.05a2.53 2.53 0 00-3-.46 2.5 2.5 0 00-.53 3.94l3 3a2.19 2.19 0 00-3.24.16 2.28 2.28 0 00.24 3L22 39a9.39 9.39 0 0013.37-.06 14.47 14.47 0 004-10.81L39 16a1.08 1.08 0 00-1.08-1 4.45 4.45 0 00-4.46 4.26z"
