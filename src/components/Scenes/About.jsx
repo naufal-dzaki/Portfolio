@@ -8,16 +8,16 @@ const About = ({ setSelectedPage }) => {
   return (
     <div
       id="about"
-      className="pt-[100px] grid place-content-center w-full max-w-[1000px] mx-auto"
+      className="pt-[100px] lg:pb-20 grid place-content-center w-full max-w-[1000px] mx-auto"
       style={{ minHeight: "calc(100vh - 100px)" }}>
       <motion.div
         className="flex flex-row items-center mb-5 sm:mb-6 md:mb-7 lg:mb-8"
         initial="hidden"
         whileInView={"visible"}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ delay: 0, duration: 0.5 }}
+        viewport={{ once: true, amount: "all" }}
+        transition={{ delay: 0, duration: 0.7 }}
         variants={{
-          hidden: { opacity: 0, y: 20 },
+          hidden: { opacity: 0, y: 35 },
           visible: { opacity: 1, y: 0 },
         }}>
         <h2 className="text-nd-primary text-2xl sm:text-3xl md:text-4xl element">
@@ -28,19 +28,19 @@ const About = ({ setSelectedPage }) => {
       <motion.div onViewportEnter={() => setSelectedPage("about")}>
         <div className="flex flex-col lg:flex-row gap-4 sm:gap-5 md:gap-6 lg:gap-7 mx-5">
           <motion.div
-            className="lg:order-2 w-56 sm:w-60 md:w-64 lg:w-72 h-56 sm:h-60 md:h-64 lg:h-72 bg-nd-white rounded-[15px] self-center"
+            className="grid lg:order-2 min-w-[224px] sm:min-w-[240px] md:min-w-[256px] lg:min-w-[288px] min-h-[224px] sm:min-h-[240px] md:min-h-[256px] lg:min-h-[288px] items-center justify-center bg-nd-white rounded-[15px] self-center lg:self-start"
             initial="hidden"
             whileInView={"visible"}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ delay: 0, duration: 0.5 }}
+            viewport={{ once: true, amount: "all" }}
+            transition={{ delay: 0, duration: 0.7 }}
             variants={{
-              hidden: { opacity: 0, y: 20 },
-              visible: { opacity: 1, y: 0 },
+              hidden: { opacity: 0, x: 40, scale: 0.95 },
+              visible: { opacity: 1, x: 0, scale: 1 },
             }}>
             <img
-              src=""
+              src="./img/avatar/avatar.png"
               alt="Naufal Photo's"
-              className=" w-56 sm:w-60 md:w-64 lg:w-72 h-56 sm:h-60 md:h-64 lg:h-72 object-cover bg-nd-white rounded-[15px] self-center"
+              className="min-w-max w-52 sm:w-56 md:w-60 lg:w-64 h-52 sm:h-56 md:h-60 lg:h-64 object-cover bg-nd-white self-end justify-self-center"
             />
           </motion.div>
           <div className="flex flex-col gap-y-2 sm:gap-y-3 md:gap-y-4 flex-grow">
@@ -48,10 +48,10 @@ const About = ({ setSelectedPage }) => {
               className="text-nd-white text-base sm:text-xl"
               initial="hidden"
               whileInView={"visible"}
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ delay: 0, duration: 0.5 }}
+              viewport={{ once: true, amount: "all" }}
+              transition={{ delay: 0.3, duration: 0.7 }}
               variants={{
-                hidden: { opacity: 0, y: 20 },
+                hidden: { opacity: 0, y: 35 },
                 visible: { opacity: 1, y: 0 },
               }}>
               Hello! My name is Muhammad Naufal Dzaki Adani. I’m a junior web
@@ -63,10 +63,10 @@ const About = ({ setSelectedPage }) => {
               className="text-nd-white text-base sm:text-xl"
               initial="hidden"
               whileInView={"visible"}
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ delay: 0, duration: 0.5 }}
+              viewport={{ once: true, amount: "all" }}
+              transition={{ delay: 0.6, duration: 0.7 }}
               variants={{
-                hidden: { opacity: 0, y: 20 },
+                hidden: { opacity: 0, y: 35 },
                 visible: { opacity: 1, y: 0 },
               }}>
               I'm open to Job opportunities where I can contribute, learn and
@@ -95,31 +95,40 @@ const About = ({ setSelectedPage }) => {
                 className="mb-3"
                 initial="hidden"
                 whileInView={"visible"}
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ delay: 0, duration: 0.5 }}
+                viewport={{ once: true, amount: "all" }}
+                transition={{ delay: 0.9, duration: 0.7 }}
                 variants={{
-                  hidden: { opacity: 0, y: 20 },
+                  hidden: { opacity: 0, y: 35 },
                   visible: { opacity: 1, y: 0 },
                 }}>
                 Here are a few technologies I've been working with recently:
               </motion.p>
-              <ul className="grid grid-cols-2 gap-y-2 w-full max-w-[500px] list-inside">
+              <motion.ul
+                className="grid grid-cols-2 gap-y-2 w-full max-w-[500px] list-inside"
+                initial="hidden"
+                whileInView={"visible"}
+                viewport={{ once: true, amount: "all" }}
+                transition={{ delayChildren: 1.2, duration: 0.7 }}
+                variants={{
+                  hidden: { opacity: 0, y: 35 },
+                  visible: { opacity: 1, y: 0 },
+                }}>
                 {tech.map((items, index) => (
                   <motion.li
                     style={{ listStyleImage: "url(./icon/arrowRight.svg)" }}
                     initial="hidden"
                     key={index}
                     whileInView={"visible"}
-                    viewport={{ once: true, amount: 0.5 }}
-                    transition={{ delay: 0.2 * index, duration: 0.5 }}
+                    viewport={{ once: true, amount: "all" }}
+                    transition={{ delay: 0.2 * index, ation: 0.5 }}
                     variants={{
-                      hidden: { opacity: 0, y: 20 },
+                      hidden: { opacity: 0, y: 30 },
                       visible: { opacity: 1, y: 0 },
                     }}>
                     {items}
                   </motion.li>
                 ))}
-              </ul>
+              </motion.ul>
             </div>
           </div>
         </div>

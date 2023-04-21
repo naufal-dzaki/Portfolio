@@ -12,7 +12,7 @@ const Project = ({ setSelectedPage }) => {
   return (
     <div
       id="project"
-      className="pt-[100px] flex flex-col w-full max-w-[900px] mx-auto">
+      className="pt-[100px] lg:pb-20 flex flex-col w-full max-w-[900px] mx-auto">
       <motion.div
         className="flex flex-row items-center mb-5 sm:mb-6 md:mb-7 lg:mb-8 w-full"
         initial="hidden"
@@ -37,7 +37,7 @@ const Project = ({ setSelectedPage }) => {
               <motion.img
                 src={value.imgUrl}
                 alt={value.title}
-                className="img-hover object-cover h-[156px] sm:h-[234px] md:h-[273px] lg:h-[299px] xl:h-[325px] w-[240px] sm:w-[360px] md:w-[420px] lg:w-[460px] xl:w-[500px] rounded-[15px] shadow-sm"
+                className="img-hover object-cover h-[156px] sm:h-[234px] md:h-[273px] lg:h-[299px] xl:h-[325px] w-[240px] sm:w-[360px] md:w-[420px] lg:w-[460px] xl:w-[500px] rounded-[15px] shadow-md"
                 initial="hidden"
                 whileInView={"visible"}
                 viewport={{ once: true, amount: 0.5 }}
@@ -48,11 +48,11 @@ const Project = ({ setSelectedPage }) => {
                 }}
               />
               <motion.div
-                className="absolute right-0 bottom-0 z-10 h-[182px] sm:h-[234px] md:h-[273px] lg:h-[299px] xl:h-[325px] w-[280px] sm:w-[360px] md:w-[420px] lg:w-[460px] xl:w-[500px] bg-nd-code-bg-4/5 backdrop-blur-md rounded-[15px] p-3 sm:p-5 md:p-6 lg:p-7 xl:p-8"
+                className="absolute right-0 bottom-0 z-10 h-[182px] sm:h-[234px] md:h-[273px] lg:h-[299px] xl:h-[325px] w-[280px] sm:w-[360px] md:w-[420px] lg:w-[460px] xl:w-[500px] bg-nd-code-bg-4/5 backdrop-blur-md rounded-[15px] p-3 sm:p-5 md:p-6 lg:p-7 xl:p-8 shadow-md"
                 initial="hidden"
                 whileInView={"visible"}
                 viewport={{ once: true, amount: 0.5 }}
-                transition={{ delay: 0.4 * index, duration: 0.7 }}
+                transition={{ delay: 0.5 * index, duration: 0.7 }}
                 variants={{
                   hidden: { opacity: 0, x: 50 },
                   visible: { opacity: 1, x: 0 },

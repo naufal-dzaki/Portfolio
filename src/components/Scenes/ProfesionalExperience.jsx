@@ -31,16 +31,16 @@ const ProfesionalExperience = ({ setSelectedPage }) => {
   return (
     <div
       id="experience"
-      className="pt-[100px] grid place-content-center w-full max-w-[50rem] mx-auto"
+      className="pt-[100px] lg:pb-20 grid place-content-center w-full max-w-[50rem] mx-auto"
       style={{ minHeight: "calc(100vh - 100px)" }}>
       <motion.div
         className="flex flex-row items-center mb-5 sm:mb-6 md:mb-7 lg:mb-8"
         initial="hidden"
         whileInView={"visible"}
         viewport={{ once: true, amount: 0.5 }}
-        transition={{ delay: 0, duration: 0.5 }}
+        transition={{ delay: 0, duration: 0.7 }}
         variants={{
-          hidden: { opacity: 0, y: 20 },
+          hidden: { opacity: 0, y: 35 },
           visible: { opacity: 1, y: 0 },
         }}>
         <h2 className="text-nd-primary text-2xl sm:text-3xl md:text-4xl">
@@ -56,9 +56,9 @@ const ProfesionalExperience = ({ setSelectedPage }) => {
                 initial="hidden"
                 whileInView={"visible"}
                 viewport={{ once: true, amount: 0.5 }}
-                transition={{ delayChildren: 0.1, delay: 0, duration: 0.5 }}
+                transition={{ delayChildren: 0.1, delay: 0, duration: 0.7 }}
                 variants={{
-                  hidden: { opacity: 0, y: 20 },
+                  hidden: { opacity: 0, y: 35 },
                   visible: { opacity: 1, y: 0 },
                 }}>
                 {handleCompanyLogo(value.company)}
@@ -69,9 +69,9 @@ const ProfesionalExperience = ({ setSelectedPage }) => {
                   initial="hidden"
                   whileInView={"visible"}
                   viewport={{ once: true, amount: 0.5 }}
-                  transition={{ delay: 0, duration: 0.5 }}
+                  transition={{ delay: 0, duration: 0.7 }}
                   variants={{
-                    hidden: { opacity: 0, y: 20 },
+                    hidden: { opacity: 0, y: 35 },
                     visible: { opacity: 1, y: 0 },
                   }}
                 />
@@ -83,9 +83,9 @@ const ProfesionalExperience = ({ setSelectedPage }) => {
                 initial="hidden"
                 whileInView={"visible"}
                 viewport={{ once: true, amount: 0.5 }}
-                transition={{ delay: 0, duration: 0.5 }}
+                transition={{ delay: 0, duration: 0.7 }}
                 variants={{
-                  hidden: { opacity: 0, y: 20 },
+                  hidden: { opacity: 0, y: 35 },
                   visible: { opacity: 1, y: 0 },
                 }}>
                 {value.position}{" "}
@@ -101,9 +101,9 @@ const ProfesionalExperience = ({ setSelectedPage }) => {
                 initial="hidden"
                 whileInView={"visible"}
                 viewport={{ once: true, amount: 0.5 }}
-                transition={{ delay: 0, duration: 0.5 }}
+                transition={{ delay: 0, duration: 0.7 }}
                 variants={{
-                  hidden: { opacity: 0, y: 20 },
+                  hidden: { opacity: 0, y: 35 },
                   visible: { opacity: 1, y: 0 },
                 }}>
                 {handleDate(value.startDate, value.endDate)}
@@ -117,7 +117,7 @@ const ProfesionalExperience = ({ setSelectedPage }) => {
                     viewport={{ once: true, amount: 0.5 }}
                     transition={{ delay: 0.2 * index, duration: 0.5 }}
                     variants={{
-                      hidden: { opacity: 0, x: 20 },
+                      hidden: { opacity: 0, x: 25 },
                       visible: { opacity: 1, x: 0 },
                     }}>
                     {HandleTechIcon(items)}
@@ -132,13 +132,13 @@ const ProfesionalExperience = ({ setSelectedPage }) => {
                     initial="hidden"
                     whileInView={"visible"}
                     viewport={{ once: true, amount: 0.5 }}
-                    transition={{ delay: 0.2 * index, duration: 0.5 }}
+                    transition={{ delay: 0.3 * index, duration: 0.5 }}
                     variants={{
-                      hidden: { opacity: 0, y: 20 },
+                      hidden: { opacity: 0, y: 25 },
                       visible: { opacity: 1, y: 0 },
-                    }}>
-                    {items}
-                  </motion.li>
+                    }}
+                    dangerouslySetInnerHTML={{ __html: `${items}` }}
+                  />
                 ))}
               </ul>
             </div>

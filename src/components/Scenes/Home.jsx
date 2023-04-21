@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Home = ({ setSelectedPage }) => {
   const handleClickButton = () => {
     window.open(
-      "https://drive.google.com/file/d/1zI6ivhxIlBbHQCLbetC2PbSHH8zJaphv/view?usp=share_link",
+      "https://drive.google.com/file/d/1f22Q-_439L6eOFBIm-c1E5J3ob1trp_h/view?usp=sharing",
       "_blank"
     );
   };
@@ -23,9 +23,9 @@ const Home = ({ setSelectedPage }) => {
             initial="hidden"
             whileInView={"visible"}
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ delay: 0, duration: 0.5 }}
+            transition={{ delay: 0, duration: 0.7 }}
             variants={{
-              hidden: { opacity: 0, y: -10 },
+              hidden: { opacity: 0, y: 35 },
               visible: { opacity: 1, y: 0 },
             }}>
             <ReactTyped
@@ -47,9 +47,9 @@ const Home = ({ setSelectedPage }) => {
             initial="hidden"
             whileInView={"visible"}
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
+            transition={{ delay: 0.3, duration: 0.7 }}
             variants={{
-              hidden: { opacity: 0, y: -10 },
+              hidden: { opacity: 0, y: 35 },
               visible: { opacity: 1, y: 0 },
             }}>
             Muhammad Naufal Dzaki.
@@ -59,9 +59,9 @@ const Home = ({ setSelectedPage }) => {
             initial="hidden"
             whileInView={"visible"}
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ delay: 0.4, duration: 0.5 }}
+            transition={{ delay: 0.6, duration: 0.7 }}
             variants={{
-              hidden: { opacity: 0, y: -10 },
+              hidden: { opacity: 0, y: 35 },
               visible: { opacity: 1, y: 0 },
             }}>
             I'm Junior Web Developer based On Surabaya.
@@ -70,10 +70,10 @@ const Home = ({ setSelectedPage }) => {
             initial="hidden"
             whileInView={"visible"}
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ delay: 0.6, duration: 0.5 }}
+            transition={{ delay: 0.9, duration: 0.7 }}
             variants={{
-              hidden: { opacity: 0, y: -10 },
-              visible: { opacity: 1, y: 0 },
+              hidden: { opacity: 0, x: 40 },
+              visible: { opacity: 1, x: 0 },
             }}>
             <OutlineButton OnClickEvent={handleClickButton}>
               Resume
@@ -87,8 +87,8 @@ const Home = ({ setSelectedPage }) => {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ delay: 0, duration: 0.5 }}
           variants={{
-            hidden: { opacity: 0, x: 20 },
-            visible: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, x: 40, scale: 0.95 },
+            visible: { opacity: 1, x: 0, scale: 1 },
           }}>
           <CodePreview />
         </motion.div>

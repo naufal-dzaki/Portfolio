@@ -69,7 +69,7 @@ const NavBar = ({ selectedPage, setSelectedPage }) => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
-                    transition={{ delay: 0.2 * index, duration: 0.5 }}
+                    transition={{ delay: 0.3 * index, duration: 0.5 }}
                     variants={{
                       hidden: { opacity: 0, y: 10 },
                       visible: { opacity: 1, y: 0 },

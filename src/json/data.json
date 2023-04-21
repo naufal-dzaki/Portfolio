@@ -12,7 +12,7 @@
             "startDate": "11-01-2022",
             "endDate": "02-10-2022",
             "tech": ["React JS", "Tailwind CSS", "Bootstrap", "SCSS"],
-            "jobDesc": ["Responsible for maintaining and implement design to code of Peduly using Tailwind CSS and React JS", "Responsible for initialize and implement design to code of Involuntir using Tailwind CSS and React JS", "Responsible for maintaining and implement design to code of Dashboard Peduly using React JS, Bootstrap and SCSS", "Collaborate with UI/UX Designer and Backend Engineer"]
+            "jobDesc": ["Responsible for maintaining and implement design to code of <a href='https://peduly.com/' target='_blank' class='underline'>Peduly</a> using Tailwind CSS and React JS", "Responsible for initialize and implement design to code of <a href='https://involuntir.com' target='_blank' class='underline'>Involuntir</a> using Tailwind CSS and React JS", "Responsible for maintaining and implement design to code of <a href='https://admin.peduly.com/' target='_blank' class='underline'>Dashboard Peduly</a> using React JS, Bootstrap and SCSS", "Collaborate with UI/UX Designer and Backend Engineer"]
         },
         {
             "company": "aksamedia",
@@ -26,20 +26,21 @@
     ],
     "project": [
         {
-            "title": "BeSmart",
-            "imgUrl": "./img/project/besmart.png",
-            "tech": ["Laravel", "Tailwind CSS"],
-            "description": "Besmart is an E-Learning platform to facilitate the distance learning process.",
-            "linkGithub": "https://github.com/naufal-dzaki/besmart_",
-            "linkWebsite": "https://naufaldzaki.netlify.app"
+            "title": "Nhask",
+            "imgUrl": "./img/project/nhask1.png",
+            "tech": ["React JS", "Tailwind CSS", "Laravel"],
+            "description": "Nhask is a Drag and Drop To-Do list web app to make task management, organization, and planning easier",
+            "linkGithub": "https://github.com/Naufal-dzaki/Nhask-TodoList-BackEnd",
+            "linkWebsite": ""
         },
         {
             "title": "BeSmart",
-            "imgUrl": "./img/project/besmart.png",
+            "imgUrl": "./img/project/besmart2.png",
             "tech": ["Laravel", "Tailwind CSS"],
             "description": "Besmart is an E-Learning platform to facilitate the distance learning process.",
             "linkGithub": "https://github.com/naufal-dzaki/besmart_",
-            "linkWebsite": "https://naufaldzaki.netlify.app"
+            "linkWebsite": "https://naufaldzaki.netlify.app",
+            "mockupCreadit" : "https://www.freepik.com/free-psd/digital-device-screen-mockup-psd-with-tablet-laptop-computer-phone_17860353.htm#query=mockup%20tablet%20and%20laptop&position=12&from_view=search&track=ais"
         }
     ]
 }
