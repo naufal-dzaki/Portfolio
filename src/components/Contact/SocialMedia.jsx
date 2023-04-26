@@ -8,34 +8,57 @@ import "./index.css";
 const SocialMedia = () => {
   return (
     <div className="w-full md:w-10 md:fixed md:bottom-0 md:left-2 lg:left-4 xl:left-7 md:right-auto md:z-10">
-      <motion.ul
-        className="flex flex-row md:flex-col items-center justify-center m-0 p-0 gap-5"
-        initial="hidden"
-        whileInView={"visible"}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ delay: 0.1, duration: 0.5 }}
-        variants={{
-          hidden: { opacity: 0, y: 50 },
-          visible: { opacity: 1, y: 0 },
-        }}>
-        <li>
+      <motion.ul className="flex flex-row md:flex-col items-center justify-center m-0 p-0 gap-5">
+        <motion.li
+          initial="hidden"
+          whileInView={"visible"}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 30 },
+            visible: { opacity: 1, y: 0 },
+          }}>
           <a href="http://github.com/naufal-dzaki">
             <GitHub />
           </a>
-        </li>
-        <li>
+        </motion.li>
+        <motion.li
+          initial="hidden"
+          whileInView={"visible"}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 30 },
+            visible: { opacity: 1, y: 0 },
+          }}>
           <a href="http://linkedin.com/in/nd-naufaldzaki">
             <LinkedIn />
           </a>
-        </li>
-        <li>
+        </motion.li>
+        <motion.li
+          initial="hidden"
+          whileInView={"visible"}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.6, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 30 },
+            visible: { opacity: 1, y: 0 },
+          }}>
           <a href="http://instagram.com/naufal.dza">
             <Instagram />
           </a>
-        </li>
-        <li>
+        </motion.li>
+        <motion.li
+          initial="hidden"
+          whileInView={"visible"}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.8, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 30 },
+            visible: { opacity: 1, y: 0 },
+          }}>
           <hr className="hidden md:flex border-l border-nd-secondary flex-grow socialMedia-line" />
-        </li>
+        </motion.li>
       </motion.ul>
     </div>
   );
