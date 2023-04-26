@@ -40,7 +40,7 @@ const About = ({ setSelectedPage }) => {
             <img
               src="./img/avatar/avatar.png"
               alt="Naufal Photo's"
-              className="min-w-max w-52 sm:w-56 md:w-60 lg:w-64 h-52 sm:h-56 md:h-60 lg:h-64 object-cover bg-nd-white self-end justify-self-center"
+              className="min-w-max w-52 sm:w-56 md:w-60 lg:w-64 h-52 sm:h-56 md:h-60 lg:h-[264px] object-cover bg-nd-white self-end justify-self-center"
             />
           </motion.div>
           <div className="flex flex-col gap-y-2 sm:gap-y-3 md:gap-y-4 flex-grow">
