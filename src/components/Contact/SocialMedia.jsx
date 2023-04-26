@@ -18,7 +18,7 @@ const SocialMedia = () => {
             hidden: { opacity: 0, y: 30 },
             visible: { opacity: 1, y: 0 },
           }}>
-          <a href="http://github.com/naufal-dzaki">
+          <a href="http://github.com/naufal-dzaki" target="_blank">
             <GitHub />
           </a>
         </motion.li>
@@ -31,7 +31,7 @@ const SocialMedia = () => {
             hidden: { opacity: 0, y: 30 },
             visible: { opacity: 1, y: 0 },
           }}>
-          <a href="http://linkedin.com/in/nd-naufaldzaki">
+          <a href="http://linkedin.com/in/nd-naufaldzaki" target="_blank">
             <LinkedIn />
           </a>
         </motion.li>
@@ -44,7 +44,7 @@ const SocialMedia = () => {
             hidden: { opacity: 0, y: 30 },
             visible: { opacity: 1, y: 0 },
           }}>
-          <a href="http://instagram.com/naufal.dza">
+          <a href="http://instagram.com/naufal.dza" target="_blank">
             <Instagram />
           </a>
         </motion.li>
