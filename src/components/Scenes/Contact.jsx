@@ -43,10 +43,21 @@ const Contact = ({ setSelectedPage }) => {
             visible: { opacity: 1, y: 0 },
           }}>
           Dont be a stranger!{" "}
-          <WavingHand
-            size={"h-[30px] sm:h-9 md:h-12 lg:h-[60px]"}
-            isWaving={true}
-          />
+          <motion.span
+            className="flex flex-col items-center justify-center"
+            initial="hidden"
+            whileInView={"visible"}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0, duration: 0.7 }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: { opacity: 1 },
+            }}>
+            <WavingHand
+              size={"h-[30px] sm:h-9 md:h-12 lg:h-[60px]"}
+              isWaving={true}
+            />
+          </motion.span>
         </motion.h1>
         <motion.p
           className="text-base sm:text-lg md:text-xl text-nd-secondary text-center mb-8"
