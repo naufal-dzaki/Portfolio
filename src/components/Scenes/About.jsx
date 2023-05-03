@@ -28,7 +28,7 @@ const About = ({ setSelectedPage }) => {
       <motion.div onViewportEnter={() => setSelectedPage("about")}>
         <div className="flex flex-col lg:flex-row gap-4 sm:gap-5 md:gap-6 lg:gap-7 mx-5">
           <motion.div
-            className="grid lg:order-2 min-w-[224px] sm:min-w-[240px] md:min-w-[256px] lg:min-w-[288px] min-h-[224px] sm:min-h-[240px] md:min-h-[256px] lg:min-h-[288px] items-center justify-center bg-nd-white rounded-[15px] self-center lg:self-start"
+            className="grid lg:order-2 min-w-[224px] sm:min-w-[240px] md:min-w-[256px] lg:min-w-[288px] min-h-[224px] sm:min-h-[240px] md:min-h-[256px] lg:min-h-[288px] overflow-hidden items-center justify-center bg-nd-white rounded-[15px] self-center lg:self-start"
             initial="hidden"
             whileInView={"visible"}
             viewport={{ once: true, amount: "all" }}
@@ -73,7 +73,7 @@ const About = ({ setSelectedPage }) => {
               grow. If you have a good opportunity that matches with my skills
               and{" "}
               <Link
-                className="text-nd-primary cursor-pointer"
+                className="text-nd-primary cursor-pointer underline"
                 to={"experience"}
                 smooth={true}
                 duration={500}
@@ -82,7 +82,7 @@ const About = ({ setSelectedPage }) => {
               </Link>{" "}
               then don't hesitate to{" "}
               <Link
-                className="text-nd-primary cursor-pointer"
+                className="text-nd-primary cursor-pointer underline"
                 to={"contact"}
                 smooth={true}
                 duration={500}
