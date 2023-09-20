@@ -38,7 +38,7 @@ const About = ({ setSelectedPage }) => {
               visible: { opacity: 1, x: 0, scale: 1 },
             }}>
             <img
-              src="./img/avatar/avatar.png"
+              src="./img/avatar/avatar_2.png"
               alt="Naufal Photo's"
               className="min-w-max w-52 sm:w-56 md:w-60 lg:w-64 h-52 sm:h-56 md:h-60 lg:h-[264px] object-cover bg-nd-white self-end justify-self-center"
             />
@@ -54,10 +54,13 @@ const About = ({ setSelectedPage }) => {
                 hidden: { opacity: 0, y: 35 },
                 visible: { opacity: 1, y: 0 },
               }}>
-              Hello! My name is Muhammad Naufal Dzaki Adani. I’m a junior web
-              developer based on Surabaya, Indonesia. I enjoy to learn about Web
-              Programming since 2019 when I was studying at Vocational High
-              School.
+              I'm an undergraduate student at UPN "Veteran" East Java. I have
+              been immersing myself in the realm of software engineering since
+              2019, during my time as a student at SMKN 1 Surabaya. I am a
+              dedicated web developer with a particular emphasis on front-end
+              development. Presently, I am actively engaged in learning and
+              delving deeper into the JavaScript programming language,
+              specifically focusing on the MERN Stack.
             </motion.p>
             <motion.p
               className="text-nd-white text-base sm:text-xl"
