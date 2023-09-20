@@ -84,7 +84,7 @@ const ProfesionalExperience = ({ setSelectedPage }) => {
                   hidden: { opacity: 0, y: 35 },
                   visible: { opacity: 1, y: 0 },
                 }}>
-                {HandleCompanyLogo(value.id)}
+                {HandleCompanyLogo(value.company)}
               </motion.span>
               {experience.length - value.id !== 0 && (
                 <motion.hr
