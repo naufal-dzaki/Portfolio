@@ -16,7 +16,7 @@
             "jobDesc": ["Acquired proficiency in building full-stack websites using MongoDB, Express JS, React JS and Node JS through technical classes", "Developed RESTful API with CRUD functionality using Express JS and MongoDB, following the principles of N-Layered structure.", "Developed website interfaces using React.js, following principles of atomic design.", "Completed self-learning placed course from Progate (HTML& CSS, ES6, React JS, Node JS, Git)."]
         },
         {
-            "id": 3,
+            "id": 2,
             "company": "Peduly",
             "linkCompany": "https://peduly.com",
             "position": "Frontend Web Developer (internship)",
