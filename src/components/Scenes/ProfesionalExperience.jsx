@@ -1,29 +1,52 @@
 import React from "react";
 import data from "../../json/data.json";
-import Peduly from "../../assets/Logos/Peduly";
-import Aksamedia from "../../assets/Logos/Aksamedia";
+// import Peduly from "../../assets/Logos/Peduly";
+// import Aksamedia from "../../assets/Logos/Aksamedia";
+// import DjavaOptik from "../../assets/Logos/DjavaOptik";
+// import GoToImpact from "../../assets/Logos/GoToImpact";
 import { motion } from "framer-motion";
 import HandleTechIcon from "../../utils/HandleTechIcon";
+import HandleCompanyLogo from "../../utils/HandleCompanyLogo";
 
 const ProfesionalExperience = ({ setSelectedPage }) => {
   const experience = data.experience;
 
-  const handleCompanyLogo = (company) => {
-    if (company === "peduly") return <Peduly />;
-    else if (company === "aksamedia") return <Aksamedia />;
-    else return console.log(`error, ${company} logo's not found`);
-  };
+  // const handleCompanyLogo = (company) => {
+  //   if (company === "peduly") {
+  //     console.log(company);
+  //     return <Peduly />;
+  //   }
+  //   if (company === "aksamedia") {
+  //     console.log(company);
+  //     return <Aksamedia />;
+  //   }
+  //   if (company === "Djava Optik") {
+  //     console.log(company);
+  //     return <DjavaOptik />;
+  //   }
+  //   if (company === "Go To Impact Foundation") {
+  //     console.log(company);
+  //     return <GoToImpact />;
+  //   }
+  //   console.log("tidak stop");
+  //   return console.error(`error, ${company} logo's not found`);
+  // };
 
   const handleDate = (start, end) => {
-    let dateStart = new Intl.DateTimeFormat("en-GB", {
+    let dateStart, dateEnd;
+    dateStart = new Intl.DateTimeFormat("en-GB", {
       year: "numeric",
       month: "short",
     }).format(Date.parse(start));
 
-    let dateEnd = new Intl.DateTimeFormat("en-GB", {
-      year: "numeric",
-      month: "short",
-    }).format(Date.parse(end));
+    if (end === "Present") dateEnd = end;
+
+    if (end !== "Present") {
+      dateEnd = new Intl.DateTimeFormat("en-GB", {
+        year: "numeric",
+        month: "short",
+      }).format(Date.parse(end));
+    }
 
     return `${dateStart} - ${dateEnd}`;
   };
@@ -49,8 +72,8 @@ const ProfesionalExperience = ({ setSelectedPage }) => {
         <hr className="border-t border-nd-primary ml-5 flex-grow max-w-[300px]" />
       </motion.div>
       <motion.div onViewportEnter={() => setSelectedPage("experience")}>
-        {experience.map((value, index) => (
-          <div className="flex gap-3 mx-3 sm:mx-4 md:mx-5" key={index}>
+        {experience.map((value) => (
+          <div className="flex gap-3 mx-3 sm:mx-4 md:mx-5" key={value.id}>
             <div className="flex flex-col items-center">
               <motion.span
                 initial="hidden"
@@ -61,9 +84,9 @@ const ProfesionalExperience = ({ setSelectedPage }) => {
                   hidden: { opacity: 0, y: 35 },
                   visible: { opacity: 1, y: 0 },
                 }}>
-                {handleCompanyLogo(value.company)}
+                {HandleCompanyLogo(value.id)}
               </motion.span>
-              {experience.length - 1 - index !== 0 && (
+              {experience.length - value.id !== 0 && (
                 <motion.hr
                   className="border-l border-nd-third h-full"
                   initial="hidden"

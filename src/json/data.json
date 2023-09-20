@@ -6,22 +6,24 @@
     ],
     "experience": [
         {
-            "company": "peduly",
+            "id": 1,
+            "company": "Go To Impact Foundation",
+            "linkCompany": "https://www.goto-impact.org/",
+            "position": "Generasi GIGIH Fullstack Developer (Apprenticeship)",
+            "startDate": "07-13-2023",
+            "endDate": "Present",
+            "tech": ["Mongo DB", "Express JS", "React JS", "Node JS"],
+            "jobDesc": ["Acquired proficiency in building full-stack websites using MongoDB, Express JS, React JS and Node JS through technical classes", "Developed RESTful API with CRUD functionality using Express JS and MongoDB, following the principles of N-Layered structure.", "Developed website interfaces using React.js, following principles of atomic design.", "Completed self-learning placed course from Progate (HTML& CSS, ES6, React JS, Node JS, Git)."]
+        },
+        {
+            "id": 3,
+            "company": "Peduly",
             "linkCompany": "https://peduly.com",
             "position": "Frontend Web Developer (internship)",
             "startDate": "11-01-2022",
             "endDate": "02-10-2022",
             "tech": ["React JS", "Tailwind CSS", "Bootstrap", "SCSS"],
-            "jobDesc": ["Responsible for maintaining and implement design to code of <a href='https://peduly.com/' target='_blank' class='underline'>Peduly</a> using Tailwind CSS and React JS", "Responsible for initialize and implement design to code of <a href='https://involuntir.com' target='_blank' class='underline'>Involuntir</a> using Tailwind CSS and React JS", "Responsible for maintaining and implement design to code of <a href='https://admin.peduly.com/' target='_blank' class='underline'>Dashboard Peduly</a> using React JS, Bootstrap and SCSS", "Collaborate with UI/UX Designer and Backend Engineer"]
-        },
-        {
-            "company": "aksamedia",
-            "linkCompany": "https://aksamedia.co.id/",
-            "position": "Student Internship",
-            "startDate": "10-01-2020",
-            "endDate": "03-01-2021",
-            "tech": ["wordpress"],
-            "jobDesc": ["Learn about landing page design and implement it using WordPress"]
+            "jobDesc": ["Contributed to maintaining and implementing the design-to-code process for <a href='https://peduly.com/' target='_blank' class='underline'>Peduly</a>, utilizing React JS and Tailwind CSS", "Contributed to maintaining and implementing the design-to-code process for <a href='https://admin.peduly.com/' target='_blank' class='underline'>Admin Peduly</a>, utilizing React JS, Bootstrap and SCSS.", "Successfully developed and implemented the design-to-code processes for <a href='https://involuntir.com/' target='_blank' class='underline'>Involuntir</a>, utilizing Tailwind CSS and React JS.", "Collaborated with UI/UX Designer to create visually appealing and user friendly.", "Collaborated with Back-end Engineers to create RESTFUL APIs for seamless communication between front-end and back-end systems."]
         }
     ],
     "project": [
