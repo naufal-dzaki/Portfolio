@@ -1,36 +1,10 @@
 import React from "react";
 import data from "../../json/data.json";
-// import Peduly from "../../assets/Logos/Peduly";
-// import Aksamedia from "../../assets/Logos/Aksamedia";
-// import DjavaOptik from "../../assets/Logos/DjavaOptik";
-// import GoToImpact from "../../assets/Logos/GoToImpact";
 import { motion } from "framer-motion";
 import HandleTechIcon from "../../utils/HandleTechIcon";
-import HandleCompanyLogo from "../../utils/HandleCompanyLogo";
 
 const ProfesionalExperience = ({ setSelectedPage }) => {
   const experience = data.experience;
-
-  // const handleCompanyLogo = (company) => {
-  //   if (company === "peduly") {
-  //     console.log(company);
-  //     return <Peduly />;
-  //   }
-  //   if (company === "aksamedia") {
-  //     console.log(company);
-  //     return <Aksamedia />;
-  //   }
-  //   if (company === "Djava Optik") {
-  //     console.log(company);
-  //     return <DjavaOptik />;
-  //   }
-  //   if (company === "Go To Impact Foundation") {
-  //     console.log(company);
-  //     return <GoToImpact />;
-  //   }
-  //   console.log("tidak stop");
-  //   return console.error(`error, ${company} logo's not found`);
-  // };
 
   const handleDate = (start, end) => {
     let dateStart, dateEnd;
@@ -84,7 +58,11 @@ const ProfesionalExperience = ({ setSelectedPage }) => {
                   hidden: { opacity: 0, y: 35 },
                   visible: { opacity: 1, y: 0 },
                 }}>
-                {HandleCompanyLogo(value.company)}
+                <img
+                  src={value.logo}
+                  alt={value.company}
+                  className="h-14 -mb-[9px] -mt-[9px]"
+                />
               </motion.span>
               {experience.length - value.id !== 0 && (
                 <motion.hr
