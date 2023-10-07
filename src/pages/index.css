@@ -1,0 +1,15 @@
+.custom-h {
+    height: calc(100vh - 69px);
+}
+
+@media (min-width: 640px) { 
+    .custom-h {
+        height: calc(100vh - 57px);
+    }    
+}
+
+@media (min-width: 768px) { 
+    .custom-h {
+        height: calc(100vh - 73px);
+    }    
+}
