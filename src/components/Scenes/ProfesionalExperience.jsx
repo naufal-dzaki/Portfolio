@@ -2,28 +2,11 @@ import React from "react";
 import data from "../../json/data.json";
 import { motion } from "framer-motion";
 import HandleTechIcon from "../../utils/HandleTechIcon";
+import HandleCompanyLogo from "../../utils/HandleCompanyLogo";
+import HandleExperienceDate from "../../utils/HandleExperienceDate";
 
 const ProfesionalExperience = ({ setSelectedPage }) => {
   const experience = data.experience;
-
-  const handleDate = (start, end) => {
-    let dateStart, dateEnd;
-    dateStart = new Intl.DateTimeFormat("en-GB", {
-      year: "numeric",
-      month: "short",
-    }).format(Date.parse(start));
-
-    if (end === "Present") dateEnd = end;
-
-    if (end !== "Present") {
-      dateEnd = new Intl.DateTimeFormat("en-GB", {
-        year: "numeric",
-        month: "short",
-      }).format(Date.parse(end));
-    }
-
-    return `${dateStart} - ${dateEnd}`;
-  };
 
   return (
     <div
@@ -58,11 +41,7 @@ const ProfesionalExperience = ({ setSelectedPage }) => {
                   hidden: { opacity: 0, y: 35 },
                   visible: { opacity: 1, y: 0 },
                 }}>
-                <img
-                  src={value.logo}
-                  alt={value.company}
-                  className="h-14 -mb-[9px] -mt-[9px]"
-                />
+                {HandleCompanyLogo(value.company)}
               </motion.span>
               {experience.length - value.id !== 0 && (
                 <motion.hr
@@ -107,7 +86,7 @@ const ProfesionalExperience = ({ setSelectedPage }) => {
                   hidden: { opacity: 0, y: 35 },
                   visible: { opacity: 1, y: 0 },
                 }}>
-                {handleDate(value.startDate, value.endDate)}
+                {HandleExperienceDate(value.startDate, value.endDate)}
               </motion.h5>
               <div className="flex gap-x-2">
                 {value.tech.map((items, index) => (
