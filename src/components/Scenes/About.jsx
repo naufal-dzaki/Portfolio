@@ -45,7 +45,7 @@ const About = ({ setSelectedPage }) => {
           </motion.div>
           <div className="flex flex-col gap-y-2 sm:gap-y-3 md:gap-y-4 flex-grow">
             <motion.p
-              className="text-nd-white text-base sm:text-xl"
+              className="text-nd-white text-base sm:text-xl text-justify"
               initial="hidden"
               whileInView={"visible"}
               viewport={{ once: true, amount: "all" }}
@@ -63,7 +63,7 @@ const About = ({ setSelectedPage }) => {
               specifically focusing on the MERN Stack.
             </motion.p>
             <motion.p
-              className="text-nd-white text-base sm:text-xl"
+              className="text-nd-white text-base sm:text-xl text-justify"
               initial="hidden"
               whileInView={"visible"}
               viewport={{ once: true, amount: "all" }}
