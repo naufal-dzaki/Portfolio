@@ -3,7 +3,7 @@ import Hamburger from "hamburger-react";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 
-const NavBar = ({ selectedPage, setSelectedPage }) => {
+const NavBar = ({ selectedPage, setSelectedPage, isNotFoundPage = false }) => {
   const [isOpen, setIsOpen] = useState(false);
   const navRef = useRef();
   const menus = ["home", "about", "experience", "project", "contact"];
@@ -29,7 +29,7 @@ const NavBar = ({ selectedPage, setSelectedPage }) => {
   });
 
   return (
-    <div
+    <header
       className={
         isOpen &&
         "fixed z-30 backdrop-blur-sm bg-nd-dark-1/2 md:bg-transparent md:backdrop-blur-0 transition ease-in duration-200 w-full h-screen md:h-auto"
@@ -60,35 +60,50 @@ const NavBar = ({ selectedPage, setSelectedPage }) => {
                 isOpen ? "flex px-12 md:px-0 pb-6 md:pb-0" : "hidden"
               } md:flex justify-between w-full`}>
               <ul className="flex flex-col text-center md:text-left md:flex-row space-x-0 md:space-x-8 text-lg text-nd-white">
-                {menus.map((menu, index) => (
+                {isNotFoundPage && (
                   <motion.li
-                    key={index}
-                    className={`py-3 hover:text-nd-primary cursor-pointer w-full capitalize ${
-                      selectedPage === menu && "text-nd-primary"
-                    }`}
+                    className={`py-3 hover:text-nd-primary cursor-pointer w-full capitalize`}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
-                    transition={{ delay: 0.3 * index, duration: 0.5 }}
+                    transition={{ delay: 0.3, duration: 0.5 }}
                     variants={{
                       hidden: { opacity: 0, y: 10 },
                       visible: { opacity: 1, y: 0 },
                     }}>
-                    <Link
-                      to={menu}
-                      smooth={true}
-                      duration={500}
-                      onClick={() => handleClickMenu(menu)}>
-                      {menu}
-                    </Link>
+                    <a href="/">Home</a>
                   </motion.li>
-                ))}
+                )}
+                {!isNotFoundPage &&
+                  menus.map((menu, index) => (
+                    <motion.li
+                      key={index}
+                      className={`py-3 hover:text-nd-primary cursor-pointer w-full capitalize ${
+                        selectedPage === menu && "text-nd-primary"
+                      }`}
+                      initial="hidden"
+                      whileInView="visible"
+                      viewport={{ once: true, amount: 0.5 }}
+                      transition={{ delay: 0.3 * index, duration: 0.5 }}
+                      variants={{
+                        hidden: { opacity: 0, y: 10 },
+                        visible: { opacity: 1, y: 0 },
+                      }}>
+                      <Link
+                        to={menu}
+                        smooth={true}
+                        duration={500}
+                        onClick={() => handleClickMenu(menu)}>
+                        {menu}
+                      </Link>
+                    </motion.li>
+                  ))}
               </ul>
             </div>
           </div>
         </div>
       </nav>
-    </div>
+    </header>
   );
 };
 
