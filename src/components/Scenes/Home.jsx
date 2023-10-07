@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Home = ({ setSelectedPage }) => {
   const handleClickButton = () => {
     window.open(
-      "https://drive.google.com/file/d/1tf1vRaknps9cZSvtzoxbjtA0I8BQccej/view?usp=share_link",
+      "https://drive.google.com/file/d/1_yQI8U8HFJiwlwTuNkl9NMfEimZoIETI/view?usp=sharing",
       "_blank"
     );
   };
