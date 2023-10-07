@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
 import NavBar from "../components/Nav/NavBar";
 import Home from "../components/Scenes/Home";
 import About from "../components/Scenes/About";
@@ -8,13 +7,14 @@ import Project from "../components/Scenes/Project";
 import Contact from "../components/Scenes/Contact";
 import SocialMedia from "../components/Contact/SocialMedia";
 import Gmail from "../components/Contact/GMail";
+import Footer from "../components/Scenes/Footer";
 
 const Landing = () => {
   const [selectedPage, setSelectedPage] = useState("home");
   return (
     <div className="bg-nd-dark min-h-screen flex flex-col overflow-hidden">
       <NavBar selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-      <div className="pb-5 px-6 sm:px-12 md:px-16">
+      <main className="pb-5 px-6 sm:px-12 md:px-16">
         <Home setSelectedPage={setSelectedPage} />
         <About setSelectedPage={setSelectedPage} />
         <ProfesionalExperience setSelectedPage={setSelectedPage} />
@@ -23,7 +23,8 @@ const Landing = () => {
 
         <SocialMedia />
         <Gmail />
-      </div>
+      </main>
+      <Footer />
     </div>
   );
 };
