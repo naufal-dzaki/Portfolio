@@ -1,9 +1,0 @@
-.socialMedia-line {
-    height: 0;
-}
-
-@media (min-width: 768px) {
-    .socialMedia-line {
-        height: calc(60vh - 132px);
-    }
-}

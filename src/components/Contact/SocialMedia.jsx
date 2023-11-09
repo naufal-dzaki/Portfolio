@@ -49,6 +49,7 @@ const SocialMedia = () => {
           </a>
         </motion.li>
         <motion.li
+          className="hidden min-[768px]:block"
           initial="hidden"
           whileInView={"visible"}
           viewport={{ once: true, amount: 0.5 }}
@@ -57,7 +58,7 @@ const SocialMedia = () => {
             hidden: { opacity: 0, y: 30 },
             visible: { opacity: 1, y: 0 },
           }}>
-          <hr className="hidden md:flex border-l border-nd-secondary flex-grow socialMedia-line" />
+          <hr className="hidden md:flex border-l border-nd-secondary flex-grow h-0 min-[768px]:h-[calc(60vh-132px)]" />
         </motion.li>
       </motion.ul>
     </div>
