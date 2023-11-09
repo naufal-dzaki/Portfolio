@@ -3,7 +3,6 @@ import Instagram from "../../assets/Logos/Instagram";
 import GitHub from "../../assets/Logos/GitHub";
 import LinkedIn from "../../assets/Logos/LinkedIn";
 import { motion } from "framer-motion";
-import "./index.css";
 
 const SocialMedia = () => {
   return (
@@ -31,7 +30,7 @@ const SocialMedia = () => {
             hidden: { opacity: 0, y: 30 },
             visible: { opacity: 1, y: 0 },
           }}>
-          <a href="http://linkedin.com/in/nd-naufaldzaki" target="_blank">
+          <a href="http://linkedin.com/in/naufal-dzaki" target="_blank">
             <LinkedIn />
           </a>
         </motion.li>
