@@ -1,0 +1,7 @@
+.headroom-wrapper {
+    height: 96px !important;
+}
+
+.headroom {
+    z-index: 40 !important;
+}

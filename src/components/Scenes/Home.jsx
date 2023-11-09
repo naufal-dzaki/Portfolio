@@ -12,12 +12,12 @@ const Home = ({ setSelectedPage }) => {
     );
   };
   return (
-    <div className="pt-[100px]" id="home">
+    <div id="home" className="pt-0 sm:pt-12 md:pt-14 lg:pt-0">
       <motion.div
         onViewportEnter={() => setSelectedPage("home")}
         className="grid grid-cols-1 lg:grid-cols-10 lg:gap-8 pb-0 sm:pb-11 md:pb-12 lg:py-0 items-center md:px-8"
         style={{ minHeight: "calc(100vh - 100px)" }}>
-        <div className="md:col-span-6 flex flex-col gap-y-2 sm:gap-y-3 md:gap-y-4 lg:gap-y-5 py-0 sm:py-12 md:py-14 lg:py-0">
+        <div className="md:col-span-6 flex flex-col gap-y-2 sm:gap-y-3 md:gap-y-4 lg:gap-y-5 pb-0 sm:pb-12 md:pb-14 lg:pb-0">
           <motion.h3
             className="text-nd-white text-base sm:text-lg md:text-xl ml-1 h-7"
             initial="hidden"
