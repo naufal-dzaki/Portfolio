@@ -54,7 +54,7 @@ const About = ({ setSelectedPage }) => {
                 hidden: { opacity: 0, y: 35 },
                 visible: { opacity: 1, y: 0 },
               }}>
-              I'm an undergraduate student at UPN "Veteran" East Java. I have
+              I'm an undergraduate student at UPN "Veteran" Jawa Timur. I have
               been immersing myself in the realm of software engineering since
               2019, during my time as a student at SMKN 1 Surabaya. I am a
               dedicated web developer with a particular emphasis on front-end
