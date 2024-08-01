@@ -7,6 +7,16 @@
     "experience": [
         {
             "id": 1,
+            "company": "PT. Graha Mutu Persada",
+            "linkCompany": "https://grahamutupersada.com/",
+            "position": "Web Developer (Freelance)",
+            "startDate": "02-23-2024",
+            "endDate": "Present",
+            "tech": ["Laravel","Tailwind CSS", "JQuery", "MySQL"],
+            "jobDesc": ["Collaborated with a team of 5 developers to build robust and scalable software applications, ensuring high performance and reliability.", "Integrated over 40,000 Excel data entries into the web system by developing an efficient import feature.", "Created data tables according to client specifications, including filter systems handling over 50,000 data entries.", "Optimized SQL queries to enhance the performance of data retrieval processes involving more than 50,000 entries.", "Organized 4 dashboard pages with a total of over 15 charts, including filter systems for comprehensive user analysis related to business processes.", "Developed an export-to-Excel feature, allowing users to select data time ranges for management and monitoring purposes."]
+        },
+        {
+            "id": 2,
             "company": "Go To Impact Foundation",
             "linkCompany": "https://www.goto-impact.org/",
             "position": "Generasi GIGIH Fullstack Developer (Apprenticeship)",
@@ -16,7 +26,7 @@
             "jobDesc": ["Acquired proficiency in building full-stack websites using MongoDB, Express JS, React JS and Node JS through technical classes", "Developed RESTful API with CRUD functionality using Express JS and MongoDB, following the principles of N-Layered structure.", "Developed website interfaces using React.js, following principles of atomic design.", "Completed self-learning placed course from Progate (HTML& CSS, ES6, React JS, Node JS, Git).", "Collaborated with a 5-member team to successfully complete the final capstone project."]
         },
         {
-            "id": 2,
+            "id": 3,
             "company": "Djava Optik",
             "linkCompany": "https://optikdjava.com/",
             "position": "Wordpress Developer (FreeLance)",
@@ -26,7 +36,7 @@
             "jobDesc": ["Created an online store website using wordpress, showcasing eye glass products and ensuring a user friendly browsing experience", "Optimized website performance by implementing caching and image compression", "Collaborated with a friend to successfully build Djava Optik's online store, integrating payment gateways and order management system"]
         },
         {
-            "id": 3,
+            "id": 4,
             "company": "Peduly",
             "linkCompany": "https://peduly.com",
             "position": "Frontend Web Developer (internship)",

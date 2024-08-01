@@ -7,6 +7,8 @@ import Bootstrap from "../assets/Logos/Bootstrap";
 import SCSS from "../assets/Logos/SCSS";
 import WordPress from "../assets/Logos/WordPress";
 import Laravel from "../assets/Logos/Laravel";
+import Jquery from "../assets/Logos/Jquery";
+import Mysql from "../assets/Logos/Mysql";
 
 const HandleTechIcon = (tech) => {
   if (tech === "React JS") return <ReactLogo size={"h-5 md:h-6"} />;
@@ -18,6 +20,8 @@ const HandleTechIcon = (tech) => {
   else if (tech === "SCSS") return <SCSS size={"h-5 md:h-6"} />;
   else if (tech === "wordpress") return <WordPress size={"h-5 md:h-6"} />;
   else if (tech === "Laravel") return <Laravel size={"h-5 md:h-6"} />;
+  else if (tech === "JQuery") return <Jquery size={"h-5 md:h-6"} />;
+  else if (tech === "MySQL") return <Mysql size={"h-5 md:h-6"} />;
   else return console.log(`error, ${tech} icon not found`);
 };
 
