@@ -1,3 +1,4 @@
+import Tooltip from "../components/Tooltip";
 import MongodbLogo from "../assets/Logos/MongodbLogo";
 import ExpressLogo from "../assets/Logos/ExpressLogo";
 import ReactLogo from "../assets/Logos/ReactLogo";
@@ -11,17 +12,17 @@ import Jquery from "../assets/Logos/Jquery";
 import Mysql from "../assets/Logos/Mysql";
 
 const HandleTechIcon = (tech) => {
-  if (tech === "React JS") return <ReactLogo size={"h-5 md:h-6"} />;
-  else if (tech === "Mongo DB") return <MongodbLogo size={"h-5 md:h-6"} />;
-  else if (tech === "Express JS") return <ExpressLogo size={"h-5 md:h-6"} />;
-  else if (tech === "Node JS") return <NodeLogo size={"h-5 md:h-6"} />;
-  else if (tech === "Tailwind CSS") return <Tailwind size={"h-5 md:h-6"} />;
-  else if (tech === "Bootstrap") return <Bootstrap size={"h-5 md:h-6"} />;
-  else if (tech === "SCSS") return <SCSS size={"h-5 md:h-6"} />;
-  else if (tech === "wordpress") return <WordPress size={"h-5 md:h-6"} />;
-  else if (tech === "Laravel") return <Laravel size={"h-5 md:h-6"} />;
-  else if (tech === "JQuery") return <Jquery size={"h-5 md:h-6"} />;
-  else if (tech === "MySQL") return <Mysql size={"h-5 md:h-6"} />;
+  if (tech === "React JS") return <Tooltip text={tech}><ReactLogo size={"h-5 md:h-6"} /></Tooltip>;
+  else if (tech === "Mongo DB") return <Tooltip text={tech}><MongodbLogo size={"h-5 md:h-6"} /></Tooltip>;
+  else if (tech === "Express JS") return <Tooltip text={tech}><ExpressLogo size={"h-5 md:h-6"} /></Tooltip>;
+  else if (tech === "Node JS") return <Tooltip text={tech}><NodeLogo size={"h-5 md:h-6"} /></Tooltip>;
+  else if (tech === "Tailwind CSS") return <Tooltip text={tech}><Tailwind size={"h-5 md:h-6"} /></Tooltip>;
+  else if (tech === "Bootstrap") return <Tooltip text={tech}><Bootstrap size={"h-5 md:h-6"} /></Tooltip>;
+  else if (tech === "SCSS") return <Tooltip text={tech}><SCSS size={"h-5 md:h-6"} /></Tooltip>;
+  else if (tech === "wordpress") return <Tooltip text={tech}><WordPress size={"h-5 md:h-6"} /></Tooltip>;
+  else if (tech === "Laravel") return <Tooltip text={tech}><Laravel size={"h-5 md:h-6"} /></Tooltip>;
+  else if (tech === "JQuery") return <Tooltip text={tech}><Jquery size={"h-5 md:h-6"} /></Tooltip>;
+  else if (tech === "MySQL") return <Tooltip text={tech}><Mysql size={"h-5 md:h-6"} /></Tooltip>;
   else return console.log(`error, ${tech} icon not found`);
 };
 
