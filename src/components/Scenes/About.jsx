@@ -54,7 +54,7 @@ const About = ({ setSelectedPage }) => {
                 hidden: { opacity: 0, y: 35 },
                 visible: { opacity: 1, y: 0 },
               }}>
-                Hello! I'm an Informatics undergraduate student with a strong foundation in web programming, which I have been developing since 2019. I am currently focused on advancing my skills in frontend development using React.js, Next.js, and Tailwind CSS, as well as backend development with Laravel. My experience includes building scalable web applications, integrating large datasets, and optimizing performance to ensure high reliability and efficiency. I am passionate about creating user-friendly, visually appealing, and highly functional web solutions.
+                Hello! I'm an Informatics undergraduate student with a strong foundation in web programming, which I have been developing since 2020. I am currently focused on advancing my skills in frontend development using React.js, Next.js, and Tailwind CSS, as well as backend development with Laravel. My experience includes building scalable web applications, integrating large datasets, and optimizing performance to ensure high reliability and efficiency. I am passionate about creating user-friendly, visually appealing, and highly functional web solutions.
             </motion.p>
             <motion.p
               className="text-nd-white text-base sm:text-xl text-justify"
