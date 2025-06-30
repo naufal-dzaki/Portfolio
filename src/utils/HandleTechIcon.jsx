@@ -10,6 +10,9 @@ import WordPress from "../assets/Logos/WordPress";
 import Laravel from "../assets/Logos/Laravel";
 import Jquery from "../assets/Logos/Jquery";
 import Mysql from "../assets/Logos/Mysql";
+import NextJS from "../assets/Logos/NextJS";
+import Prisma from "../assets/Logos/Prisma";
+import Shadcn from "../assets/Logos/Shadcn";
 
 const HandleTechIcon = (tech) => {
   if (tech === "React JS") return <Tooltip text={tech}><ReactLogo size={"h-5 md:h-6"} /></Tooltip>;
@@ -23,6 +26,10 @@ const HandleTechIcon = (tech) => {
   else if (tech === "Laravel") return <Tooltip text={tech}><Laravel size={"h-5 md:h-6"} /></Tooltip>;
   else if (tech === "JQuery") return <Tooltip text={tech}><Jquery size={"h-5 md:h-6"} /></Tooltip>;
   else if (tech === "MySQL") return <Tooltip text={tech}><Mysql size={"h-5 md:h-6"} /></Tooltip>;
+  else if (tech === "MySQL") return <Tooltip text={tech}><Mysql size={"h-5 md:h-6"} /></Tooltip>;
+  else if (tech === "Next JS") return <Tooltip text={tech}><NextJS size={"h-5 md:h-6"} /></Tooltip>;
+  else if (tech === "Prisma") return <Tooltip text={tech}><Prisma size={"h-5 md:h-6"} /></Tooltip>;
+  else if (tech === "Shadcn") return <Tooltip text={tech}><Shadcn size={"h-5 md:h-6"} /></Tooltip>;
   else return console.log(`error, ${tech} icon not found`);
 };
 
