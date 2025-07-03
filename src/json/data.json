@@ -21,7 +21,7 @@
             "linkCompany": "https://grahamutupersada.com/",
             "position": "Web Developer (Freelance)",
             "startDate": "02-23-2024",
-            "endDate": "02-28-2025",
+            "endDate": "01-30-2025",
             "tech": ["Laravel","Tailwind CSS", "JQuery", "MySQL"],
             "jobDesc": ["Collaborated with a team of 5 developers to build robust and scalable software applications, ensuring high performance and reliability.", "Integrated over 40,000 Excel data entries into the web system by developing an efficient import feature.", "Created data tables according to client specifications, including filter systems handling over 50,000 data entries.", "Optimized SQL queries to enhance the performance of data retrieval processes involving more than 50,000 entries.", "Organized 4 dashboard pages with a total of over 15 charts, including filter systems for comprehensive user analysis related to business processes.", "Developed an export-to-Excel feature, allowing users to select data time ranges for management and monitoring purposes."]
         },
