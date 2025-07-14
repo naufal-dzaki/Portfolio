@@ -1,7 +1,7 @@
 {
     "about": [
         {
-            "tech": ["HTML5 & CSS3", "Tailwind CSS", "Bootstrap", "JavaScript", "React JS", "PHP", "Laravel", "Figma"]
+            "tech": ["HTML5 & CSS3", "Tailwind CSS", "JavaScript", "TypeScript", "React JS", "Next JS", "Prisma", "PHP", "Laravel", "AJAX", "JQuery", "MySQL"]
         }
     ],
     "experience": [

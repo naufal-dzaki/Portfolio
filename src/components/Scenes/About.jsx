@@ -101,7 +101,7 @@ const About = ({ setSelectedPage }) => {
                 Here are a few technologies I've been working with recently:
               </motion.p>
               <motion.ul
-                className="grid grid-cols-2 gap-y-2 w-full max-w-[500px] list-inside"
+                className="grid grid-cols-2 md:grid-cols-3 gap-y-2 w-full list-inside"
                 initial="hidden"
                 whileInView={"visible"}
                 viewport={{ once: true, amount: "all" }}
