@@ -54,7 +54,7 @@ const About = ({ setSelectedPage }) => {
                 hidden: { opacity: 0, y: 35 },
                 visible: { opacity: 1, y: 0 },
               }}>
-                Hello! I’m an Informatics undergraduate who has been passionate about web development since 2020. I specialize in frontend development with React.js, Next.js, and Tailwind CSS, as well as backend development using Laravel, having built scalable applications that integrate large datasets and optimize performance. I’m currently learning the Go programming language to deepen my backend expertise, and I love crafting user‑friendly, visually engaging, and highly functional web solutions.
+                Hello! I’m an Informatics undergraduate who has been passionate about web development since 2021. I specialize in frontend development with React.js, Next.js, and Tailwind CSS, as well as backend development using Laravel, having built scalable applications that integrate large datasets and optimize performance. I’m currently learning the Go programming language to deepen my backend expertise, and I love crafting user‑friendly, visually engaging, and highly functional web solutions.
             </motion.p>
             <motion.p
               className="text-nd-white text-base sm:text-xl text-justify"
